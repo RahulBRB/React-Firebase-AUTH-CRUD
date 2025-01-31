@@ -1,4 +1,4 @@
-import "./profile.css"
+import "./css/style.css"
 import { deleteDoc, doc, getDoc, updateDoc } from "firebase/firestore";
 import React, { useEffect, useState } from "react";
 import { auth, db } from "../firebase-config";
@@ -115,8 +115,8 @@ export default function Profile() {
   }
 
   return (
-    <div>
-      {!updateOn ? (
+<div className="profile-container">
+{!updateOn ? (
         <>
           <h2>👋 Welcome {userData.fname}</h2>
           <h3>User info</h3>

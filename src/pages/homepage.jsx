@@ -1,4 +1,4 @@
-import "./homepage.css";
+import "./css/style.css"
 import React, { useState } from "react";
 import { auth, db } from "../firebase-config";
 import {
